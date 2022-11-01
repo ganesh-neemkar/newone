@@ -1,0 +1,12 @@
+TextField tfInput = new TextField(30); // Declare and allocate an TextField instance called tfInput
+add(tfInput);                          // "this" Container adds the TextField
+TextField tfResult = new TextField();  // Declare and allocate an TextField instance called tfResult
+tfResult.setEditable(false) ;          // Set to read-only
+add(tfResult);                         // "this" Container adds the TextField
+......
+// Read an int from TextField "tfInput", square it, and display on "tfResult".
+// getText() returns a String, need to convert to int
+int number = Integer.parseInt(tfInput.getText());
+number *= number;
+// setText() requires a String, need to convert the int number to String.
+tfResult.setText(number + "");

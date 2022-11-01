@@ -1,0 +1,8 @@
+// Allocate an anonymous Label instance.
+// "this" container adds the instance.
+// You CANNOT reference an anonymous instance to carry out further operations.
+add(new Label("Enter Name: ", Label.RIGHT));
+ 
+// Same as
+Label xxx = new Label("Enter Name: ", Label.RIGHT)); // xxx assigned by compiler
+add(xxx);
